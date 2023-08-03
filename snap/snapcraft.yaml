@@ -13,7 +13,7 @@ parts:
     # See 'snapcraft plugins'
     plugin: dump
     source: https://github.com/SpacingBat3/WebCord/releases/download/v$SNAPCRAFT_PROJECT_VERSION/webcord_$SNAPCRAFT_PROJECT_VERSION_$SNAPCRAFT_TARGET_ARCH.deb
-    override-prime: |
+    override-build: |
       craftctl default
       rm $CRAFT_PART_INSTALL/usr/lib/webcord/chrome-sandbox
       sed -i 's|Icon=webcord|Icon=${SNAP}/usr/share/pixmaps/webcord.png|' ${CRAFT_PART_INSTALL}/usr/share/applications/webcord.desktop
