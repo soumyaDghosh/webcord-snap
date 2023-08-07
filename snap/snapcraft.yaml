@@ -19,8 +19,8 @@ parts:
       sed -i 's|Icon=webcord|Icon=usr/share/pixmaps/webcord.png|' $CRAFT_PART_INSTALL/usr/share/applications/webcord.desktop
     stage-packages:
       - xdg-utils
-   prime:
-     - -usr/bin/xdg-open
+    prime:
+      - -usr/bin/xdg-open
 
 
 plugs:
