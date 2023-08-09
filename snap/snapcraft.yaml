@@ -21,14 +21,7 @@ parts:
       rm $CRAFT_PART_INSTALL/usr/lib/webcord/chrome-sandbox
       sed -i 's|Icon=webcord|Icon=usr/share/pixmaps/webcord.png|' $CRAFT_PART_INSTALL/usr/share/applications/webcord.desktop
     stage-packages:
-      - libatomic1
-      - libc++1
-      - libnspr4
-      - libnss3
-      - libxss1
-      - xdg-utils
-    prime:
-      - -usr/bin/xdg-open
+      - libwebrtc-audio-processing1
 
 
 plugs:
