@@ -12,6 +12,11 @@ architectures:
   - build-on: arm64
   - build-on: armhf
 parts:
+  launcher:
+    source: launcher
+    plugin: dump
+    override-build: |
+      cp launcher $CRAFT_PART_INSTALL/
   webcord:
     # See 'snapcraft plugins'
     plugin: dump
@@ -31,7 +36,7 @@ plugs:
 
 apps:
   webcord:
-    command: usr/bin/webcord --no-sandbox --disable-seccomp-filter-sandbox --use-try-icon
+    command: launcher
     desktop: usr/share/applications/webcord.desktop
     autostart: webcord.desktop
     environment:
