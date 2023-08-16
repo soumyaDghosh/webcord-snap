@@ -48,6 +48,7 @@ apps:
       GTK_USE_PORTAL: 1
     extensions: [ gnome ]
     plugs:
+      - password-manager-service
       - audio-playback
       - audio-record
       - camera
