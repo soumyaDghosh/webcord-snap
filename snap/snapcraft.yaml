@@ -26,7 +26,7 @@ parts:
       rm $CRAFT_PART_INSTALL/usr/lib/webcord/chrome-sandbox
       sed -i 's|Icon=webcord|Icon=usr/share/pixmaps/webcord.png|' $CRAFT_PART_INSTALL/usr/share/applications/webcord.desktop
     stage-packages:
-      - libwebrtc-audio-processing1
+      - pipewire
 
 
 plugs:
