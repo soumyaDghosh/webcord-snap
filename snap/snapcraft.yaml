@@ -1,7 +1,7 @@
-name: webcord # you probably want to 'snapcraft register <name>'
-base: core22 # the base snap is the execution environment for this snap
-version: '4.4.0' # just for humans, typically '1.2+git' or '1.3.2'
-summary: A Discord and Spacebar client implemented directly without Discord API # 79 char long summary
+name: webcord
+base: core22
+version: '4.4.0'
+summary: A Discord and Spacebar client implemented directly without Discord API
 description: |
   A Discord and Spacebar client implemented directly without Discord API. Made in poland with the Electron framework.
 
@@ -10,8 +10,8 @@ issues: https://github.com/soumyaDghosh/webcord-snap/issues
 source-code: https://github.com/SpacingBat3/WebCord
 website: https://github.com/soumyaDghosh/webcord-snap
 contact: soumyadeepghosh2004@zohomail.in
-grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs and slots
+grade: stable
+confinement: strict
 architectures:
   - build-on: amd64
   - build-on: arm64
@@ -23,15 +23,12 @@ parts:
     override-build: |
       cp launcher $CRAFT_PART_INSTALL/
   webcord:
-    # See 'snapcraft plugins'
     plugin: dump
     source: https://github.com/SpacingBat3/WebCord/releases/download/v$SNAPCRAFT_PROJECT_VERSION/webcord_$SNAPCRAFT_PROJECT_VERSION_$SNAPCRAFT_TARGET_ARCH.deb
     override-build: |
       craftctl default
       rm $CRAFT_PART_INSTALL/usr/lib/webcord/chrome-sandbox
       sed -i 's|Icon=webcord|Icon=usr/share/pixmaps/webcord.png|' $CRAFT_PART_INSTALL/usr/share/applications/webcord.desktop
-    stage-packages:
-      - pipewire
 
   deps:
     plugin: nil
@@ -107,8 +104,6 @@ apps:
     desktop: usr/share/applications/webcord.desktop
     autostart: webcord.desktop
     environment:
-      # Correct the TMPDIR path for Chromium Framework/Electron to
-      # ensure libappindicator has readable resources
       TMPDIR: $XDG_RUNTIME_DIR
       GTK_USE_PORTAL: 1
       PIPEWIRE_CONFIG_NAME: "$SNAP/usr/share/pipewire/pipewire.conf"
