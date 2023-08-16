@@ -36,7 +36,7 @@ plugs:
 
 apps:
   webcord:
-    command: launcher
+    command: usr/bin/webcord
     desktop: usr/share/applications/webcord.desktop
     autostart: webcord.desktop
     environment:
