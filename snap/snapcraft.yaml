@@ -64,7 +64,6 @@ parts:
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-link-factory.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-loopback.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-metadata.so
-      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-pipe-tunnel.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-portal.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-profiler.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-protocol-native.so
@@ -82,6 +81,7 @@ parts:
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-spa-node.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-x11-bell.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-zeroconf-discover.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/v4l2/libpw-v4l2.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/libappindicator3.so.1
       - usr/lib/$CRAFT_ARCH_TRIPLET/libappindicator3.so.1.0.0
       - usr/lib/$CRAFT_ARCH_TRIPLET/libwebrtc_audio_processing.so.1
