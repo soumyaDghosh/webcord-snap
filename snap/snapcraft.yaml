@@ -5,6 +5,11 @@ summary: A Discord and Spacebar client implemented directly without Discord API 
 description: |
   A Discord and Spacebar client implemented directly without Discord API. Made in poland with the Electron framework.
 
+license: MIT
+issues: https://github.com/soumyaDghosh/webcord-snap/issues
+source-code: https://github.com/SpacingBat3/WebCord
+website: https://github.com/soumyaDghosh/webcord-snap
+contact: soumyadeepghosh2004@zohomail.in
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 architectures:
