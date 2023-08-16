@@ -56,7 +56,6 @@ parts:
       - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/volume/libspa-volume.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-access.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-adapter.so
-      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-avb.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-client-device.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-client-node.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-echo-cancel.so
