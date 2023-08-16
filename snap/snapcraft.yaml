@@ -38,7 +38,7 @@ parts:
       - libwebrtc-audio-processing1
     prime:
       - usr/lib/$CRAFT_ARCH_TRIPLET/libpipewire-0.3.so.0
-      - usr/lib/$CRAFT_ARCH_TRIPLET/libpipewire-0.3.so.0.358.0
+      - usr/lib/$CRAFT_ARCH_TRIPLET/libpipewire-0.3.so.0.348.0
       - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/aec/libspa-aec-null.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/aec/libspa-aec-webrtc.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/alsa/libspa-alsa.so
