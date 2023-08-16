@@ -28,6 +28,67 @@ parts:
     stage-packages:
       - pipewire
 
+  deps:
+    plugin: nil
+    stage-packages:
+      - libpipewire-0.3-modules
+      - libspa-0.2-modules
+      - libpipewire-0.3-0
+      - libappindicator3-1
+      - libwebrtc-audio-processing1
+    prime:
+      - usr/lib/$CRAFT_ARCH_TRIPLET/libpipewire-0.3.so.0
+      - usr/lib/$CRAFT_ARCH_TRIPLET/libpipewire-0.3.so.0.358.0
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/aec/libspa-aec-null.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/aec/libspa-aec-webrtc.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/alsa/libspa-alsa.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/audioconvert/libspa-audioconvert.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/audiomixer/libspa-audiomixer.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/audiotestsrc/libspa-audiotestsrc.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/avb/libspa-avb.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/control/libspa-control.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/support/libspa-dbus.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/support/libspa-journal.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/support/libspa-support.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/test/libspa-test.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/v4l2/libspa-v4l2.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/videoconvert/libspa-videoconvert.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/videotestsrc/libspa-videotestsrc.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/volume/libspa-volume.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-access.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-adapter.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-avb.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-client-device.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-client-node.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-echo-cancel.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-fallback-sink.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-filter-chain.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-link-factory.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-loopback.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-metadata.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-pipe-tunnel.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-portal.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-profiler.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-protocol-native.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-protocol-pulse.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-protocol-simple.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-pulse-tunnel.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-raop-discover.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-raop-sink.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-rt.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-rtkit.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-session-manager.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-spa-device-factory.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-spa-device.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-spa-node-factory.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-spa-node.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-x11-bell.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3/libpipewire-module-zeroconf-discover.so
+      - usr/lib/$CRAFT_ARCH_TRIPLET/libappindicator3.so.1
+      - usr/lib/$CRAFT_ARCH_TRIPLET/libappindicator3.so.1.0.0
+      - usr/lib/$CRAFT_ARCH_TRIPLET/libwebrtc_audio_processing.so.1
+      - usr/lib/$CRAFT_ARCH_TRIPLET/libwebrtc_audio_processing.so.1.0.0
+
 
 plugs:
   shmem:
@@ -43,8 +104,6 @@ apps:
       # Correct the TMPDIR path for Chromium Framework/Electron to
       # ensure libappindicator has readable resources
       TMPDIR: $XDG_RUNTIME_DIR
-      # Fallback to XWayland if running in a Wayland session.
-      GDK_DEBG: 'portals'
       GTK_USE_PORTAL: 1
       PIPEWIRE_CONFIG_NAME: "$SNAP/usr/share/pipewire/pipewire.conf"
       PIPEWIRE_MODULE_DIR: "$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3"
