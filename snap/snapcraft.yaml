@@ -95,7 +95,7 @@ plugs:
 
 apps:
   webcord:
-    command: usr/bin/webcord
+    command: launcher
     desktop: usr/share/applications/webcord.desktop
     autostart: webcord.desktop
     environment:
