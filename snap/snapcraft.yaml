@@ -45,7 +45,6 @@ parts:
       - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/audioconvert/libspa-audioconvert.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/audiomixer/libspa-audiomixer.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/audiotestsrc/libspa-audiotestsrc.so
-      - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/avb/libspa-avb.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/control/libspa-control.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/support/libspa-dbus.so
       - usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2/support/libspa-journal.so
