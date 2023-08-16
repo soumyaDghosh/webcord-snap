@@ -36,6 +36,7 @@ parts:
       - libpipewire-0.3-0
       - libappindicator3-1
       - libwebrtc-audio-processing1
+      - libindicator3-7
     prime:
       - usr/lib/$CRAFT_ARCH_TRIPLET/libpipewire-0.3.so.0
       - usr/lib/$CRAFT_ARCH_TRIPLET/libpipewire-0.3.so.0.348.0
@@ -86,6 +87,8 @@ parts:
       - usr/lib/$CRAFT_ARCH_TRIPLET/libappindicator3.so.1.0.0
       - usr/lib/$CRAFT_ARCH_TRIPLET/libwebrtc_audio_processing.so.1
       - usr/lib/$CRAFT_ARCH_TRIPLET/libwebrtc_audio_processing.so.1.0.0
+      - usr/lib/$CRAFT_ARCH_TRIPLET/libindicator3.so.7
+      - usr/lib/$CRAFT_ARCH_TRIPLET/libindicator3.so.7.0.0
 
 
 plugs:
