@@ -44,7 +44,7 @@ apps:
       # ensure libappindicator has readable resources
       TMPDIR: $XDG_RUNTIME_DIR
       # Fallback to XWayland if running in a Wayland session.
-      DISABLE_WAYLAND: 1
+      GDK_DEBG: 'portals'
       GTK_USE_PORTAL: 1
     extensions: [ gnome ]
     plugs:
