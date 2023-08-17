@@ -36,9 +36,7 @@ parts:
       - libpipewire-0.3-modules
       - libspa-0.2-modules
       - libpipewire-0.3-0
-      - libappindicator3-1
       - libwebrtc-audio-processing1
-      - libindicator3-7
       - pipewire-bin
 
 
