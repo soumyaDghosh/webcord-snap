@@ -12,6 +12,7 @@ website: https://github.com/soumyaDghosh/webcord-snap
 contact: soumyadeepghosh2004@zohomail.in
 grade: stable
 confinement: strict
+compression: lzo
 architectures:
   - build-on: amd64
   - build-on: arm64
