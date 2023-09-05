@@ -3,7 +3,10 @@ base: core22
 version: '4.4.0'
 summary: A Discord and Spacebar client implemented directly without Discord API
 description: |
-  A Discord and Spacebar client implemented directly without Discord API. Made in poland with the Electron framework.
+  A Discord and Spacebar client for Text Messages and Voice & Video calls with your friends, implemented directly without Discord API. Made in poland with the Electron framework. 
+  Please connect to the `password-manager-service` plug if you're facing issues. For that, run
+  `sudo snap connect webcord:password-manager-service`
+  Kindly file issues here: https://github.com/soumyaDghosh/webcord-snap/issues
 
 license: MIT
 issues: https://github.com/soumyaDghosh/webcord-snap/issues
