@@ -5,6 +5,8 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions: write-all
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -25,6 +27,8 @@ jobs:
 
       - name: Compare versions
         id: compare-versions
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           current_version=$(grep 'version:' snap/snapcraft.yaml | awk -F"'" '{print $2}')
           new_version=${{ steps.fetch-version.outputs.new_version }}
@@ -32,6 +36,7 @@ jobs:
           if [[ "$current_version" != "$new_version" ]]; then
             echo "Updating Snapcraft.yaml..."
             sed -i "s/version: '$current_version'/version: '$new_version'/" snap/snapcraft.yaml
+            echo "Staging the changes"
             git add snap/snapcraft.yaml
             git commit -m "Update Snapcraft.yaml to version $new_version"
           else
