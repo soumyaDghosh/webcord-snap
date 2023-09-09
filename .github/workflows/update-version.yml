@@ -27,12 +27,11 @@ jobs:
 
       - name: Compare versions
         id: compare-versions
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
           current_version=$(grep 'version:' snap/snapcraft.yaml | awk -F"'" '{print $2}')
           new_version=${{ steps.fetch-version.outputs.new_version }}
-
           if [[ "$current_version" != "$new_version" ]]; then
             echo "Updating Snapcraft.yaml..."
             sed -i "s/version: '$current_version'/version: '$new_version'/" snap/snapcraft.yaml
