@@ -28,8 +28,8 @@ jobs:
       - name: Compare versions
         id: compare-versions
         run: |
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config user.name "github-actions[bot]"
+          git config user.email "soumyadeepghosh2004@zohomail.in"
+          git config user.name "soumyaDghosh"
           current_version=$(grep 'version:' snap/snapcraft.yaml | awk -F"'" '{print $2}')
           new_version=${{ steps.fetch-version.outputs.new_version }}
           if [[ "$current_version" != "$new_version" ]]; then
