@@ -1,6 +1,6 @@
 name: webcord
 base: core22
-version: '4.5.0'
+version: '4.5.1'
 summary: A Discord and Spacebar client implemented directly without Discord API
 description: |
   A Discord and Spacebar client for Text Messages and Voice & Video calls with your friends, implemented directly without Discord API. Made in poland with the Electron framework. 
