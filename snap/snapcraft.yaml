@@ -1,5 +1,6 @@
 name: webcord
 base: core22
+title: WebCord
 version: '4.9.2'
 summary: A Discord and Spacebar client implemented directly without Discord API
 description: |
@@ -54,6 +55,7 @@ apps:
     command: launcher
     desktop: usr/share/applications/webcord.desktop
     autostart: webcord.desktop
+    common-id: io.github.spacingbat3.webcord
     environment:
       TMPDIR: $XDG_RUNTIME_DIR
       GTK_USE_PORTAL: 1

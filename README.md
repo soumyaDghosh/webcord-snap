@@ -1,10 +1,10 @@
 <h1 align="center">
-  <img src="https://dashboard.snapcraft.io/site_media/appmedia/2023/08/webcord.png" height="200" width="200" alt="[Webcord]">
+  <img src="https://dashboard.snapcraft.io/site_media/appmedia/2023/08/webcord.png" height="200" width="200" alt="[WebCord]">
   <br />
-  Webcord
+  WebCord
 </h1>
 
-<p align="center"><b>This is the snap for Webcord</b>, <i>“A Discord and Spacebar client for Text Messages and Voice & Video calls with your friends, implemented directly without Discord API”</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
+<p align="center"><b>This is the snap for WebCord</b>, <i>“A Discord and Spacebar client for Text Messages and Voice & Video calls with your friends, implemented directly without Discord API”</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
 distributions.</p>
 
 <p align="center">
