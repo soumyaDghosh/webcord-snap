@@ -18,7 +18,7 @@ compression: lzo
 platforms:
   amd64:
   arm64:
-  #armhf
+  armhf:
 
 parts:
   launcher:
@@ -35,6 +35,16 @@ parts:
       sed -i 's|Icon=webcord|Icon=usr/share/pixmaps/webcord.png|' $CRAFT_PART_INSTALL/usr/share/applications/webcord.desktop
     prime:
       - -usr/lib/webcord/chrome-sandbox
+
+  # Needed for setting the proper desktop file name in the electron apps
+  patch-desktop-file-name:
+    after: [webcord]
+    source: https://github.com/snapcrafters/patch-desktop-file-name.git
+    source-subdir: electron
+    plugin: nil
+    override-build: |
+      pip install asarPy --break-system-packages
+      python3 $CRAFT_PART_SRC_WORK/patch-desktop-filename.py $CRAFT_STAGE/usr/lib/webcord/resources/app.asar
 
 plugs:
   shmem:
