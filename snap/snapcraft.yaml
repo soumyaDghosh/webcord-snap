@@ -61,6 +61,8 @@ apps:
       TMPDIR: $XDG_RUNTIME_DIR
     extensions: [ gnome ]
     plugs:
+      - home
+      - removable-media
       - password-manager-service
       - audio-playback
       - audio-record
